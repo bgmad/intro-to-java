@@ -7,9 +7,23 @@ import java.util.Scanner;
 public class Hw1 {
 
     public static void main(String[] args) {
-        System.out.println(testAverage());
+        circuitBoardProfit();
     }
     
+    public static void circuitBoardProfit() {
+        Scanner kb = new Scanner(System.in);
+
+        System.out.print("Enter retail price: ");
+        double retailPrice = kb.nextDouble();
+        
+        kb.close();
+
+        double profit = retailPrice * 0.4;
+        System.out.println("Profit: " + profit +
+                           "\nSold for: " + (retailPrice + profit));
+
+    }
+
     public static double testAverage() {
         double tests[] = new double[3];
         Scanner kb = new Scanner(System.in);
