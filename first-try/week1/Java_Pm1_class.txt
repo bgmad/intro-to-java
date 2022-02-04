@@ -1,0 +1,84 @@
+// Program-1
+
+
+
+package javaapplication129;
+
+public class Main {
+
+ 
+    public static void main(String[] args) {
+     int sum,num1,num2;
+      num1=67;
+      num2=23;
+      sum=num1 + num2;
+      System.out.print("The sum is:" + sum);
+    }
+
+}
+
+output:
+run:
+The sum is:90BUILD SUCCESSFUL (total time: 0 seconds)
+
+
+
+
+// Program 2
+
+
+package avg;
+
+public class Average {
+
+    public static void main(String[] args) {
+        double grade1;
+        double grade2;
+        double total;
+        double average;
+        grade1=85.5;
+        grade2=97.0;
+        total=grade1+grade2;
+        average=total/2.0;
+        System.out.println("The average is:" + average);
+    }
+
+}
+
+output:
+
+run:
+The average is:91.25
+BUILD SUCCESSFUL (total time: 0 seconds)
+
+
+
+//Program3
+
+
+
+package javaapplication5;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int sum,num1,num2;
+      Scanner keyboard= new Scanner(System.in);
+      System.out.print("Enter first value:");
+      num1=keyboard.nextInt();
+       System.out.print("Enter second value:");
+      num2=keyboard.nextInt();
+      sum=num1 + num2;
+      System.out.print("The sum is:" + sum);
+    }
+
+}
+
+output:
+
+run:
+Enter first value:67
+Enter second value:23
+The sum is:90BUILD SUCCESSFUL (total time: 10 seconds)
+

@@ -1,0 +1,55 @@
+1.
+public static void main(String[] args) {
+    int length = 18;
+    int width = 16;
+    int perimeter = 2 * length + 2 * width;
+    System.out.println("Perimeter: " + perimeter);
+}
+
+
+2.
+public static void main(String[] args) {
+    double num1 = 16.7;
+    double num2 = 18.7; 
+    double total = num1 + num2;
+    double average = total / 2.0;
+    System.out.println("Average: " + average);
+}
+
+
+3.
+public static void main(String[] args) {
+    double radius = 3.3;
+    double circumference = 2 * 3.1416 * radius;
+    System.out.println("Circumference: " + circumference);
+}
+
+
+4.
+public static void main(String[] args) {
+    int length = 25;
+    int width = 10;
+    int depth = 6;  
+    int volume = length * width * depth;
+    System.out.println("Volume: " + volume);
+}
+
+
+5.
+public static void main(String[] args) {
+    double fahrenheit = 98.6;
+    double celsius = 5.0 / 9.0 * (fahrenheit - 32.0);
+    System.out.println("Celsius: " + celsius);
+}
+
+
+6.
+public static void main(String[] args) {
+    double halfDollars = 0.5 * 12;
+    double quarters = 0.25 * 20;
+    double dimes = 0.10 * 32;
+    double nickles = 0.05 * 45;
+    double pennies = 0.01 * 27;
+    double total = halfDollars + quarters + dimes + nickles + pennies;
+    System.out.println("Piggy bank total: " + total);
+}

@@ -1,0 +1,171 @@
+1. 
+a. This would also throw a syntax error for commas instead of semicolons in the for loop. The loop would only run because of the starting value of x and the conditional. Either could be changed to achieve whatever outcome necessary. 
+```
+public static void main(String[] args) {        
+    int  x;
+    for ( x = 20;  x >= 10; x--)
+        System.out.println( x );
+}
+```
+b. The output is only a string "i" as opposed to the variable i. The second problem is the increment is increasing by 2 instead of decreasing by two. This results in an infinite loop.
+```
+public static void main(String[] args) {        
+    for (int i=19;     i>=1;  i -=2)
+        System.out.println(i);
+}
+```
+c. Either the initial value of i is incorrect or the conditional in the for loop is incorrect. 
+```
+public static void main(String[] args) {  
+    for(int i = 10; i >= 1; i--)
+        System.out.println("*");
+}
+```
+d. Missing opening curly braces for the while loop. The variable j should increase to match the conditional (or the conditional should change). If the point is to output the variable, quotations should be removed from the output line.
+```
+public static void main(String[] args) {      
+    int j=100;
+    while (j < 110) {
+        j++;
+        System.out.println(j);
+    }
+}
+```
+e. The conditional for the while loop in wrong. If the starting value of x is 5, either the increment should decrease and keep the current conditional or flip the conditional and make the value that it's comparing to greater than the value of x.
+```
+public static void main(String[] args) {      
+    int x= 5;
+    while( x<10) {
+        x= x  + 2;      
+        System.out.println("x=" + x);
+    } 
+}
+```
+
+2.
+public static void main(String[] args) {
+    int ans =7;
+    ans += 2;
+    System.out.println("ans= "  +ans);  // ans = 9
+    ans -= 7;
+    System.out.println("ans= "  +ans);  // ans = 2
+    ans  *= 2;
+    System.out.println("ans= "  +ans);  // ans = 4
+    ans /=6 ;
+    System.out.println("ans= "  +ans);  // ans = 0
+    ans %=3;
+    System.out.println("ans= "  +ans);  // ans = 0                                  
+}   
+
+3.
+public static void main(String[] args) {                                            
+    int n=15, d=1;                                                                    
+    while ( d <= n) {
+        if (n % d == 0)
+        System.out.println(" d= " + d );
+        ++ d;  
+    }
+}    
+// output:
+/*
+d= 1
+d= 3
+d= 5
+d= 15
+*/
+
+4.
+public static void main(String[] args) {
+    int x=10; 
+    for (int i = 1; i <= 3; i++) {
+        x += 5 * i;
+        System.out.println(x);
+    }
+}
+
+5.
+public static void main(String[] args) {
+    int i;
+    for (i = 0; i < 3; i++) 
+        System.out.println("*");
+}
+
+6.
+public static void main(String[] args) {
+    int num,sum = 0;
+    Scanner keyboard = new Scanner(System.in);
+    System.out.print("Enter a number:");
+    num= keyboard.nextInt();  // Here one input:   num =38
+    while  (  num != -1 ) { 
+        System.out.print("Enter a number:");
+        num= keyboard.nextInt();  // Here four input :  45 , 71, 4, -1
+        sum = sum + num ;
+    }
+    System.out.println(  " sum = " + sum +  "  ");    // output:    sum = 119                              
+}
+
+7.
+public static void main(String[] args) {
+    int  n, k, fact ;       
+    Scanner keyboard = new Scanner (System.in);
+    System.out.print("Enter the value of n:" );
+    n= keyboard.nextInt();  
+    fact = 1;
+    k = 1;
+    while (k!=n )  {
+        fact *= k;
+        k++;
+    }
+    fact *= 5;
+    System.out.print("The factorial is: "  + fact);    
+}
+
+8.
+public static void main(String[] args) {
+    int x=1, y; 
+    y = x;
+    while (x + y <= 10) {
+        System.out.print("x + y= ");
+        System.out.println(x + y);
+        x++;
+        y = x;
+    }
+}
+
+9.
+public static void main(String[] args) {
+    int i , j;
+    for( i=1; i<=5; i++) {
+        System.out.println("\n i is now  " +  i);
+        for (j = 1; j <= 4; j++)   
+            System.out.print( "j=" + j);
+    }
+}
+
+/*
+output:
+
+ i is now  1
+j=1j=2j=3j=4
+ i is now  2
+j=1j=2j=3j=4
+ i is now  3
+j=1j=2j=3j=4
+ i is now  4
+j=1j=2j=3j=4
+ i is now  5
+j=1j=2j=3j=4
+*/
+
+10.
+public static void main(String[] args) {
+    int count = 1;
+    while ( count <= 10 ) {
+        if (count == 1 || count == 4 || count == 7 || count == 10) {
+            System.out.println("****");
+        } else {
+            System.out.println("++++");
+        }
+        count++;
+    }
+}

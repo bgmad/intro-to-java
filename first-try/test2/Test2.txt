@@ -1,0 +1,35 @@
+NAME: Ian Luchini
+ID: 23634740
+
+TEST 2A
+
+1.
+    a) public static double One(float amount) {}
+    b) public static Integer smallest(int x, int y, int z) {}
+    c) public static void instructions() {}
+    d) public static void table() {}
+
+2.
+    a) displayMessage();
+    b) showSum(5, 6);
+    c) b.
+
+3.
+    a) TRUE
+    b) TRUE
+    c) FALSE
+    d) TRUE
+    e) FALSE
+
+4.
+public class Example {
+    public static void main(String[] args) {
+        for(int g = 10; g <= 20; g++) {
+            System.out.println(g + " gallons --> " + Convert_Gallon(g) + " litres");
+        }
+    }
+
+    public static Double Convert_Gallon(int gallons) {
+        return gallons * 3.785;
+    }
+}
